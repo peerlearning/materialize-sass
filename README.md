@@ -1,7 +1,7 @@
 # Materialize Sass version for Rails Asset Pipeline
 [![Gem Version](https://badge.fury.io/rb/materialize-sass.svg)](http://badge.fury.io/rb/materialize-sass)
 
-`materialize-sass` is a Sass powered version of Materialize, a modern responsive front-end framework based on Material Design.
+`materialize-sass` is a Sass powered version of [Materialize](http://materializecss.com), a modern responsive front-end framework based on Material Design.
 
 ## Installation
 
@@ -65,9 +65,23 @@ Require Materialize javascripts in `app/assets/javascripts/application.js`:
 //= require materialize-sprockets
 ```
 
+### c. Extras
+
+[noUiSlider](http://materializecss.com/forms.html#range)
+
+in your application.scss
+```scss
+@import "materialize/extras/nouislider";
+```
+in your application.js
+```js
+//= require materialize/extras/nouislider
+```
+
+
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/materialize-sass/fork )
+1. Fork it ( https://github.com/mkhairi/materialize-sass/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
